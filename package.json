@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongodb": "^4.11.0",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "name": "crud-app",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgandolfi7/crud-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgandolfi7/crud-app/issues"
+  },
+  "homepage": "https://github.com/mgandolfi7/crud-app#readme"
+}
