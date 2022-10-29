@@ -4,7 +4,7 @@ const MongoClient = require("mongodb").MongoClient;
 const PORT = 8000;
 require("dotenv").config();
 
-
+let db
 const uri = process.env.MONGODB_URI;
 dbName = "book-tracker"
 
