@@ -5,10 +5,10 @@ const PORT = 8000;
 require("dotenv").config();
 
 
-apiKey = process.env.MONGODB_URI;
+const uri = process.env.MONGODB_URI;
 dbName = "book-tracker"
 
-MongoClient.connect(apiKey, {useUnifiedTopology: true})
+MongoClient.connect(uri, {useUnifiedTopology: true})
     .then(client => {
         console.log("Connected to MongoDB");
         db = client.db(dbName);
