@@ -5,7 +5,7 @@ const PORT = 8000;
 require("dotenv").config();
 
 
-apiKey = process.env.MONGODB_URI;
+apiKey = process.env.API_KEY;
 dbName = "book-tracker"
 
 MongoClient.connect(apiKey, {useUnifiedTopology: true})
