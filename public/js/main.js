@@ -1,4 +1,4 @@
-const deleteText = document.querySelector(".fa-trash");
+const deleteText = document.querySelectorAll(".fa-trash");
 
 Array.from(deleteText).forEach((element)=>{
     element.addEventListener('click', deleteBook)
