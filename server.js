@@ -15,12 +15,14 @@ MongoClient.connect(apiKey, {useUnifiedTopology: true})
         const bookCollection = db.collection("books");
         app.set("view engine", "ejs");
 
+        app.get("/", (req, res) => {
+            db.collection("books").find().toArray()
+            .then(data => {
+                res.render("/views/index.ejs", {info: data})
+            })
+            .catch(error => console.error(error))
+        })  
     })
-
-app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html")
-})
-
 
 app.listen(PORT, (req, res) => {
     console.log(`Listening on port ${PORT}`);
